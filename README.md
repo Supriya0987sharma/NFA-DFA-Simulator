@@ -17,6 +17,8 @@ This project demonstrates how an NFA can be converted into a DFA through an inte
 - Visualize original NFA and converted DFA diagrams.
 - Display step-by-step subset construction.
 - Download the DFA transition table as a CSV file.
+- **String Testing:** Enter an input string to check whether the generated DFA accepts or rejects it.
+- **DFA Execution Trace:** Display the state-by-state transitions followed while processing the input string.
 - Validate invalid inputs and automata definitions.
 
 ## Technologies Used
@@ -108,6 +110,16 @@ The conversion involves:
 3. Calculating transitions for each input symbol.
 4. Identifying accepting DFA states.
 5. Handling missing transitions using a dead state when required.
+
+## String Testing
+
+The simulator provides a string-testing feature to verify whether an input string is accepted or rejected by the generated DFA.
+
+1. Enter an input string in the String Testing section.
+2. Click the **Test String** button.
+3. The simulator processes each input symbol using the generated DFA transition table.
+4. A DFA Execution Trace displays the sequence of states visited.
+5. The application displays **ACCEPTED** if the final state reached is an accepting state; otherwise, it displays **REJECTED**.
 
 ## Testing
 
